@@ -11,10 +11,10 @@ After import this repo, add ldflags to your go compile args like `-X github.com/
  
  |Key|Package|Shell script|
  |----|----|----|
- |ReleaseName|version|your favor|
- |gitMajor|verflag|your favor|
- |gitMinor|verflag|your favor|
- |gitVersion|verflag|your favor|
- |gitCommit|verflag|git rev-parse "HEAD^{commit}"|
- |gitTreeState|verflag|clean: git_status=$(git status --porcelain 2>/dev/null) && [[ -z ${git_status} ]];|
- |buildDate|verflag|date -u +'%Y-%m-%dT%H:%M:%SZ'|
+ |ReleaseName|verflag|your favor|
+ |gitMajor|version|your favor|
+ |gitMinor|version|your favor|
+ |gitVersion|version|your favor|
+ |gitCommit|version|git rev-parse "HEAD^{commit}"|
+ |gitTreeState|version|clean: git_status=$(git status --porcelain 2>/dev/null) && [[ -z ${git_status} ]];|
+ |buildDate|version|date -u +'%Y-%m-%dT%H:%M:%SZ'|
